@@ -1,8 +1,17 @@
-<div class="jumbotron" style = "margin-top: 80px;" >
-<div class = "row">
-<button type = "button" class = "btn btn-primary col-md-3 col-md-offset-3"> Generate Random Uten</button>
-<p class="col-md-3 col-md-offset-1">pppp</p>
+<div class="jumbotron" style = "margin-top: 80px; padding-bottom: 90px;" >
+<h2 class="col-md-4 col-md-offset-5" >Uten Generator</h2>
+	<div class="row row1">
+	<form (submit) = "OnGenerate()">
+		<div class = "form-group">
+			<input type="submit" class="btn btn-primary col-md-3 col-md-offset-2" value="Generate Uten">
+		</div>
+	</form>
+	<p class = "col-md-3 col-md-offset-2">{{uten}}</p>
+	</div>
+	<div class = "row">
+	<button type = "button" class = "btn btn-default col-md-8" style = "margin-top: 120px; margin-left:200px;" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"  [routerLink]="['/']">Return to Home</button>
+	</div>
 </div>
-</div>
+
 
 
