@@ -16,13 +16,15 @@ import {ValidateService} from './services/validate.service';
 import {AuthService} from './services/auth.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import {AuthGuard} from './guards/auth.guard';
+import { UtengenerateComponent } from './components/utengenerate/utengenerate.component';
 
 const appRoutes: Routes =  [
   {path:'', component: HomeComponent},
   {path:'register', component: RegisterComponent},
   {path:'login', component: LoginComponent},
   {path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
-  {path:'profile', component: ProfileComponent, canActivate:[AuthGuard]}
+  {path:'profile', component: ProfileComponent, canActivate:[AuthGuard]},
+  {path:'generator', component: UtengenerateComponent}
 ]
 
 @NgModule({
@@ -33,7 +35,8 @@ const appRoutes: Routes =  [
     RegisterComponent,
     HomeComponent,
     DashboardComponent,
-    ProfileComponent
+    ProfileComponent,
+    UtengenerateComponent
   ],
   imports: [
     BrowserModule,

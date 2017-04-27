@@ -16,7 +16,7 @@
             <li class="dropdown">
               <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class = "glyphicon glyphicon-list"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Generate Uten</a></li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/generator']">Generate Uten</a></li>
                 <li><a href="#">Post your ads</a></li>
                 <li><a href="#">Search by Uten</a></li>
                 <li class="divider"></li>

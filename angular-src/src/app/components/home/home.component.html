@@ -9,7 +9,9 @@
       
 
     </div>
-      <button type = "button" class = "btn btn-default col-md-8" style = "margin-top: 40px; margin-left:200px; margin-bottom: 40px">Post my own Ads</button>
+      <button type = "button" class = "btn btn-default col-md-8" style = "margin-top: 40px; margin-left:200px; margin-bottom: 40px" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}" > <a [routerLink]="['/generator']">Post my own Ads</a></button>
+
+       <!-- <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/generator']">ADDOES</a></li> -->
 
   </div>
 </div>
