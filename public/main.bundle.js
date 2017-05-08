@@ -734,7 +734,7 @@ module.exports = "<h2 class=\"page-header\">Register</h2>\n<form (submit)=\"onRe
 /***/ 690:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron\" style = \"margin-top: 80px; padding-bottom: 90px;\" >\r\n<h2 class=\"col-md-4 col-md-offset-5\" >Uten Generator</h2>\r\n\t<div class=\"row row1\">\r\n\t<form (submit) = \"OnGenerate()\">\r\n\t\t<div class = \"form-group\">\r\n\t\t\t<input type=\"submit\" class=\"btn btn-primary col-md-3 col-md-offset-2\" value=\"Generate Uten\">\r\n\t\t</div>\r\n\t</form>\r\n\t<p class = \"col-md-3 col-md-offset-2\">{{uten}}</p>\r\n\t</div>\r\n\t<div class = \"row\">\r\n\t<button type = \"button\" class = \"btn btn-default col-md-8\" style = \"margin-top: 120px; margin-left:200px;\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"  [routerLink]=\"['/']\">Return to Home</button>\r\n\t</div>\r\n</div>\r\n\r\n\r\n\r\n"
+module.exports = "<div class=\"jumbotron\" style = \"margin-top: 80px; padding-bottom: 90px;\" >\r\n<h2 class=\"col-md-4 col-md-offset-5\" >Uten Generator</h2>\r\n\t<div class=\"row row1\">\r\n\t<form (submit) = \"OnGenerate()\">\r\n\t\t<div class = \"form-group\">\r\n\t\t\t<input type=\"submit\" class=\"btn btn-primary col-md-3 col-md-offset-2\" value=\"Generate Uten\">\r\n\t\t</div>\r\n\t</form>\r\n\t<p class = \"col-md-3 col-md-offset-2\">{{uten}}</p>\r\n\t</div>\r\n\t<div class = \"row\">\r\n\t<button type = \"button\" class = \"btn btn-default col-md-8\" style = \"margin-top: 102px; margin-left:200px;\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"  [routerLink]=\"['/']\">Return to Home</button>\r\n\t</div>\r\n</div>\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -773,7 +773,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var AuthService = (function () {
     function AuthService(http) {
         this.http = http;
-        this.isDev = true; // Change to false before deployment
+        this.isDev = false; // Change to false before deployment
     }
     AuthService.prototype.registerUser = function (user) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
@@ -817,7 +817,12 @@ var AuthService = (function () {
         localStorage.clear();
     };
     AuthService.prototype.prepEndpoint = function (ep) {
-        return 'http://localhost:3000/' + ep;
+        if (this.isDev) {
+            return ep;
+        }
+        else {
+            return 'http://localhost:3000/' + ep;
+        }
     };
     AuthService = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
