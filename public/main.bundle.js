@@ -745,7 +745,7 @@ module.exports = "<h2 class=\"page-header\">Dashboard</h2>\n<p>Welcome to your d
 /***/ 687:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron\" style = \"margin-top: 80px; padding-bottom: 90px;\" >\n\t\n</div>"
+module.exports = "<div class=\"jumbotron\" style = \"margin-top: 80px; padding-bottom: 90px;\" >\n\t<h2>Detailed Information for your post</h2>\n</div>"
 
 /***/ }),
 
