@@ -643,7 +643,7 @@ module.exports = ""
 /***/ 677:
 /***/ (function(module, exports) {
 
-module.exports = "#go{\r\n\tposition:relative;\r\n\tleft:800px;\r\n\tmargin-top: -560px;\r\n\twidth: 100px;\r\n}\r\n\r\nbutton{\r\n\tbackground-color: #14605f;\r\n}\r\n\r\ndiv.jumbotron{\r\n\tbackground-image : url('../../assets/bg1.jpeg');\r\n}"
+module.exports = "#go{\r\n\tposition:relative;\r\n\tleft:60%;\r\n\tmargin-top: -560px;\r\n\twidth: 100px;\r\n}\r\n\r\nbutton{\r\n\tbackground-color: #14605f;\r\n}\r\n\r\ndiv.jumbotron{\r\n\tbackground-image : url('../../assets/bg1.jpeg');\r\n}"
 
 /***/ }),
 
@@ -734,7 +734,7 @@ module.exports = "<h2 class=\"page-header\">Register</h2>\n<form (submit)=\"onRe
 /***/ 690:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron\" style = \"margin-top: 80px; padding-bottom: 90px;\" >\r\n<h2 class=\"col-md-4 col-md-offset-5\" >Uten Generator</h2>\r\n\t<div class=\"row row1\">\r\n\t<form (submit) = \"OnGenerate()\">\r\n\t\t<div class = \"form-group\">\r\n\t\t\t<input type=\"submit\" class=\"btn btn-primary col-md-3 col-md-offset-2\" value=\"Generate Uten\">\r\n\t\t</div>\r\n\t</form>\r\n\t<p class = \"col-md-3 col-md-offset-2\">{{uten}}</p>\r\n\t</div>\r\n\t<div class = \"row\">\r\n\t<button type = \"button\" class = \"btn btn-default col-md-8\" style = \"margin-top: 102px; margin-left:200px;\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"  [routerLink]=\"['/']\">Return to Home</button>\r\n\t</div>\r\n</div>\r\n\r\n\r\n\r\n"
+module.exports = "<div class=\"jumbotron\" style = \"margin-top: 80px; padding-bottom: 90px;\" >\r\n<h2 class=\"col-md-4 col-md-offset-5\" >Uten Generator</h2>\r\n\t<div class=\"row row1\">\r\n\t<form (submit) = \"OnGenerate()\">\r\n\t\t<div class = \"form-group\">\r\n\t\t\t<input type=\"submit\" class=\"btn btn-primary col-md-3 col-md-offset-2\" value=\"Generate Uten\">\r\n\t\t</div>\r\n\t</form>\r\n\t<p class = \"col-md-3 col-md-offset-2\">{{uten}}</p>\r\n\t</div>\r\n\t<div class = \"row\">\r\n\t<button type = \"button\" class = \"btn btn-default col-md-8\" style = \"margin-top: 102px; margin-left:200px;\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"  [routerLink]=\"['/']\">Continue to edit your post</button>\r\n\t<button type = \"button\" class = \"btn btn-default col-md-8\" style = \"margin-top: 10px; margin-left:200px;\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"  [routerLink]=\"['/']\">Return to Home</button>\r\n\t</div>\r\n</div>\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
