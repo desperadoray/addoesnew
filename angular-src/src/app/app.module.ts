@@ -17,6 +17,7 @@ import {AuthService} from './services/auth.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import {AuthGuard} from './guards/auth.guard';
 import { UtengenerateComponent } from './components/utengenerate/utengenerate.component';
+import { EditPostComponent } from './components/edit-post/edit-post.component';
 
 const appRoutes: Routes =  [
   {path:'', component: HomeComponent},
@@ -24,7 +25,8 @@ const appRoutes: Routes =  [
   {path:'login', component: LoginComponent},
   {path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
   {path:'profile', component: ProfileComponent, canActivate:[AuthGuard]},
-  {path:'generator', component: UtengenerateComponent}
+  {path:'generator', component: UtengenerateComponent},
+  {path:'post', component: EditPostComponent}
 ]
 
 @NgModule({
@@ -36,7 +38,8 @@ const appRoutes: Routes =  [
     HomeComponent,
     DashboardComponent,
     ProfileComponent,
-    UtengenerateComponent
+    UtengenerateComponent,
+    EditPostComponent
   ],
   imports: [
     BrowserModule,
